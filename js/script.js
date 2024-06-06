@@ -17,7 +17,7 @@ tombolKembaliKeAtas.addEventListener('click', () => {
 });
 
 // Penanganan pengiriman formulir
-const formulirKontak = document.getElementById('contactForm');
+const formulirKontak = document.getElementById('formulir');
 formulirKontak.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Fungsi untuk mengubah nama pada banner menggunakan prompt
-const namaBanner = document.getElementById('bannerName');
+const namaBanner = document.getElementById('namabanner');
 
 window.addEventListener('load', () => {
     const namaBaru = prompt('Masukkan nama Anda:');
