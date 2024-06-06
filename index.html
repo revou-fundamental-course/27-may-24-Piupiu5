@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="logo"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li> 
+                <li><a href="#kelas">Kelas</a></li> 
+                <li><a href="#contact">Message Us</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Banner -->
+    <section id="banner" class="banner"> 
+        <h1 id="bannerName">Hi Kalian, Selamat Datang di Website </h1>
+        <p>Ini adalah website latihan </p>
+    </section>
+    
+    <main>
+        <section id="kelas" class="nama-kelas"> 
+            <h2>Kelas</h2>
+            <div class="kelas">
+                <div class="kategori">
+                    <div class="icon"><img src="img/favicon.ico" alt=""></div> 
+                    <p>VIP</p>
+                </div>
+                <div class="kategori">
+                    <div class="icon"><img src="img/favicon.ico" alt=""></div> 
+                    <p>Business</p>
+                </div>
+                <div class="kategori">
+                    <div class="icon"><img src="img/favicon.ico" alt=""></div> 
+                    <p>Economy</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact"> 
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label>Jenis Kelamin:</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki">
+                        <label for="male">Laki-Laki</label>
+                        
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </div>
+                    
+                    <label for="message">Pesan:</label>
+                    <input type="text" id="message" name="message" required></input>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="current-info">
+                    <br><br><br>
+                    <p>Nama: <span id="currentName"></span></p>
+                    <p>Tanggal Lahir: <span id="currentDob"></span></p>
+                    <p>Jenis Kelamin: <span id="currentGender"></span></p>
+                    <p>Pesan: <span id="currentMessage"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Back to Top">Top</button>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2024 | Eka Bagus Priambudi 
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
